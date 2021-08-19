@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+/*--General--*/
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+ }
+body{
+color: #272829;
+}
+h1,h2, h3, h4, h5, h6{ 
+text-align: center;
+}
+.section-title h2{
+font-size: 65px; 
+padding-bottom: 10px;
+padding-top: 30px;
+color:#f90667;
+}
+a{
+text-decoration:none;
+}
+
+/*header*/
+#header {
+position: fixed;
+z-index: 5;
+background-color:#1b1b1b;
+min-height: 7vh;
+width: 100%;
+}
+#header .navbar ul li{
+display:inline-block;
+}
+.navbar 
+{ 
+margin-right: 0 ;
+margin-left: 0 ;
+position: relative;
+display: flex;
+flex-wrap: wrap;
+align-items: stretch;
+padding-top: .5rem;
+padding-bottom: .5rem;
+justify-content: center;
+}
+#header .navbar ul{
+  padding-left: 0;
+}
+#header .navbar ul.active{
+left: 0;
+}
+#header .navbar ul a{
+font-size: 20px;
+font-weight:bold;
+letter-spacing: .2rem;
+text-decoration: none;
+color: white;
+text-transform: uppercase;
+padding:25px ;
+}
+#header .navbar ul li:hover a::after {
+ transform: translate(-50%, -50%) scale (1);
+letter-spacing: initial;
+}
+#header .navbar ul li:hover a{
+color: crimson;
+}
+@media (max-width: 768px) {
+#header .navbar ul a{
+font-size: 9px;
+padding: 4px;
+font-weight:bold;
+}
+}
+
+/*end header*/
+
+/* ============= Hero Section ============== */
+#hero {
+width: 100%;
+height: 100vh;
+background-image:url('../img/img2.jpg') ;
+background-size: cover;
+}
+
+#hero h1{
+margin: 0 0 10px 0;
+font-size: 60px;
+font-weight: 700;
+line-height: 56px;
+color:#fff;
+}
+#hero p {
+color: #fff;
+margin-bottom: 50px;
+font-size: 40px;
+text-align: center;
+}
+#hero p span {
+color: red;
+padding-bottom: 4px; 
+letter-spacing: 1px;
+border-bottom: 3px solid #149ddd;
+}
+/* Make it Responsive */
+
+@media (max-width: 768px) {
+#hero h1 {
+font-size: 42px; 
+line-height: 36px;
+}
+#hero p{
+font-size: 25px;
+line-height: 24px;
+margin-bottom: 30px;
+text-align: center;
+}
+}
+/* =========== About Section ============*/
+#about {
+padding-bottom: 30px;
+padding-top: 30px;
+padding-right: 20px;
+padding-left: 30px;
+background: url('../img/background.jpg') top center;
+}
+.about .content h3 {
+font-weight: 700;
+font-size: 40px;
+color: #173b6c;
+padding-bottom: 20px;
+}
+.about .content ul {
+list-style: none;
+padding: 0;
+}
+.about .content ul li {
+padding-bottom: 10px;
+font-weight:600 bold;
+font-size: 20px;
+}
+.about .content ul i{
+font-size: 20px;
+padding-right: 2px;
+color: #149ddd;
+}
+.about .content p{
+font-weight: bold;
+font-size: 20px;
+padding:5px;
+}
+
+#about span{
+color:red;
+}
+#about img{
+border:10px solid #003366;
+width:415px; 
+height: 95%;
+}
+@media (max-width: 768px) {
+#about {
+padding-bottom:10px;
+padding-top: 10px;
+padding-right: 20px;
+padding-left: 30px;   
+}
+.about .content h3 {
+font-size: 30px;
+}
+.section-title h2{
+font-size: 40px; 
+padding-bottom: 3px;
+padding-top: 60px;
+}
+#about img{
+width:50%;
+height:auto;
+}
+.about .content p{
+padding:10px;
+font-size:20px;
+}
+}
+
+/* Portfolio section */
+#portfolio{
+padding-top: 30px;
+background: url('../img/Portfolio bg.jpg') top center;
+}
+#portfolio .card{
+ margin: 0 auto; 
+float: none;
+margin-bottom: 10px;
+padding-bottom: 10px;
+}
+
+
+/*========== skills Bar ==========*/
+#skills {
+background-size: cover;
+padding-bottom: 180px;
+padding-top: 125px;
+padding-right: 20px;
+padding-left: 30px;
+background: url('../img/skillsbg.jpg') top center;
+}
+.skills .progress {
+height: 100px;
+display: block;
+background:none;
+}
+.skills .progress .skill {
+padding: 10px 0;
+margin: 0 0 6px 0;
+text-transform: uppercase;
+display: block;
+font-weight: 600;
+color: #050d18;
+font-size: 20px; 
+padding-top: 3px;
+padding-bottom: 1px;
+}
+.skills p{
+  text-align: justify;
+  font-weight: bold; 
+}
+.skills .progress .skill .val {
+float: right;
+font-style: normal;
+}
+.skills .progress-bar-wrap {
+background: #dce8f8;
+}
+.skills .progress-bar {
+width: 45px;
+height: 90px;
+transition: 0.9s;
+background-color:#149ddd;
+padding-bottom: 155px;
+}
+@media (max-width:1199px){
+.skills .progress {
+height: 80px;
+}
+#skills{
+padding-bottom:80px;
+padding-top: 15px;
+}
+}
+/*--Contact section-->*/
+#contact {
+padding-bottom: 80px;
+padding-top: 100px;
+padding-right: 20px;
+padding-left: 30px;
+background: url('../img/Contact background.jpg') top center;
+}
+#contact h2,
+#contact p,
+#contact label,
+#contact li i{
+color:white;
+}
+form{
+margin-left: 25%;
+margin-right: 25%;
+width: 50%;
+}
+@media (max-width: 768px) {
+#contact {
+padding-bottom: 30px;
+padding-top: 5px;
+padding-right: 20px;
+padding-left: 30px;
+}
+#contact .section-title h2{
+padding: 17px;
+}
+form{
+  margin: 0;
+  width: auto;
+  }
+}
+/* Footer */
+#footer {
+padding: 15px;
+color: #f4f6fd;
+font-size: 14px;
+position: static;
+left: 0;
+bottom: 0;
+width: auto;
+z-index: 9999;
+background: #040b14;
+}
+#footer .copyright {
+text-align: center;
+}
+#footer .credits {
+padding-top: 5px;
+text-align: center;
+font-size: 13px;
+color: #eaebf0;
+}
+.copyright span{
+color:red;
+}
+@media (max-width:1199px) {
+#footer {
+position: static;
+width: auto;
+padding-right: 20px 15px;
+}
+}
+/* End Footer */
